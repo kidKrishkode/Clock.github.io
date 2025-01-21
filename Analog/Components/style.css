@@ -3,46 +3,24 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #f0f0f0;
+    background: #fff;
     margin: 0;
 }
 .clock{
     width: 300px;
     height: 300px;
-    border: 10px solid #DADADA;
+    border: 10px solid #dadada;
     border-radius: 50%;
     position: relative;
     padding: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    background: white;
+    background: #fff;
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); */
 }
 .clock-face{
     position: relative;
     width: 100%;
     height: 100%;
-    transform: translateY(-3px);
     border-radius: 50%;
-}
-.hand{
-    width: 40%;
-    height: 4px;
-    background: black;
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform-origin: 100%;
-    transform: rotate(90deg);
-    transition: all 0.05s;
-    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
-}
-.hour-hand{
-	width: 30%;
-	left: 20%;
-    background: #5D5D5D;
-}
-.second-hand{
-    height: 2px;
-    background: red;
 }
 .number{
     position: absolute;
@@ -63,3 +41,35 @@ body{
 .number10{ top: 30%; left: 10%; }
 .number11{ top: 12.5%; left: 25%; }
 .number12{ top: 5%; left: 50%; }
+
+.arrow{
+    width: 40%;
+    height: 4px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+.hour-arrow{
+    width: 30%;
+    left: 20%;
+    background: #5d5d5d;
+}
+.second-arrow{
+    height: 2px;
+    background: red;
+}
+.center{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: black;
+    position: absolute;
+    top: 47%;
+    left: 47%;
+    z-index: 99;
+}
