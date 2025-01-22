@@ -9,11 +9,11 @@ function setClock() {
     const secondsDegrees = ((seconds / 60) * 360) + 90;
     secondArrow.style.transform = `rotate(${secondsDegrees}deg)`;
 
-    const minutes = current.getMinutes()*0 + 9;
+    const minutes = current.getMinutes();
     const minutesDegrees = ((minutes / 60) * 360) + ((seconds / 60) * 6) + 90;
     minuteArrow.style.transform = `rotate(${minutesDegrees}deg)`;
 
-    const hours = current.getHours()*0 + 10;
+    const hours = current.getHours();
     const hoursDegrees = ((hours / 12) * 360) + ((minutes / 60) * 30) + 90;
     hourArrow.style.transform = `rotate(${hoursDegrees}deg)`;
 }
